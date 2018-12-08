@@ -1,0 +1,19 @@
+apiVersion: apps/v1beta2 # for kubectl versions >= 1.9.0 use apps/v1
+kind: Deployment
+metadata:
+  name: hello-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-deployment
+  template:
+    metadata:
+      labels:
+        app: my-deployment
+    spec:
+      containers:
+      - name: pod-demo
+        image: flashaimkevin/gin-app:0.0.1
+        ports:
+        - containerPort: 8080
