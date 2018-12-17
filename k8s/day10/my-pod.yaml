@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+  labels:
+    app: webserver
+    tier: backend   
+  annotations:
+    version: latest
+    release_date: 2017/12/17
+    contact: kevin@flashaim.com
+spec:
+  containers:
+  - name: pod-demo
+    image: flashaimkevin/gin-app:0.0.3
+    ports:
+    - containerPort: 8080
