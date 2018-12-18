@@ -1,6 +1,6 @@
 # K8S
 
-pratice how to use.
+practice how to use.
 
 ## 預想情境
 
@@ -10,9 +10,21 @@ K8S 是一各國宅型社區(很多棟)的管理者。每棟國宅(Node)就像(�
 
 ### virtualbox
 
+用來建立 node 的虛擬軟體
+
 ### kubuctl
 
+* kubectl create
+  
+* kubectl get
 
+* kubectl describe
+
+* kubectl expose
+
+  可以幫我們創建一個新的 Service 物件，來讓Kubernetes Cluster中運行的 Pod與外部互相溝通。
+
+* kubectl delete
 
 ### minikube
 
